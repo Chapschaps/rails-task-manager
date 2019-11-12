@@ -1,0 +1,13 @@
+<h1>New task</h1>
+
+<%= form_for @task do |f| %>
+ <p></p> <%= f.label :title %>
+ <p></p> <%= f.text_field :title %>
+
+ <p></p> <%= f.label :details %>
+ <p></p> <%= f.text_field :details %>
+
+<p></p>  <%= f.submit("Create Task") %>
+<% end %>
+
+<p><%= link_to "↩️ Back to list", tasks_path %></p>
